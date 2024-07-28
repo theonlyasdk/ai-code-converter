@@ -151,6 +151,8 @@
             7. You will not produce anything other than code.
             8. You will not produce any messages
             9. do not wrap code in \`\`\`cpp\`\`\`
+            10. Strictly, no markdown in output
+            11. Do not use markdown bolding or italics or any other kind of formatting
         `
         const prompt = `Convert the following code into ${select_target_language.value}: ${code_py.value} ${prompt_rules}`
         const result = await model.generateContentStream(prompt)
